@@ -1,0 +1,236 @@
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        background-color: #eee;
+
+
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 10px;
+  width: auto;
+}
+.topbar{
+  padding:0!important;
+}
+.topborder{
+  border-top:3px solid #1FAE5B;
+  padding-left: 20px;
+}
+.topleft{
+  padding-left:30px!important;
+}
+.nv-brnd img{
+  vertical-align: middle;
+height: 100%;
+width: auto;
+padding: 10px;
+
+}
+
+.navbar-nav>li>.dropdown-menu {
+  z-index: 9999;
+}
+
+body {
+  font-family: "Lato";
+}
+
+/*----------------------------
+    Section::  Tranding Apps
+-----------------------------*/
+.home .tranding-applications{
+  margin-top: 15px;
+}
+.home .tranding-apps-inner{
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  padding-bottom: 25px;
+}
+.home .news-game{
+  margin-top: 20px;
+}
+.home .news-magazines{
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  padding-bottom: 25px;
+}
+.home .updated-games{
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-left: 0px;
+}
+.home .news-magazins-heading h1{
+  font-size: 18px;
+  color: #212121;
+  text-align: left;
+}
+.home .more-btn{
+  background: #1FAE5B none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #ffffff;
+  float: right;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 20px;
+  padding: 0 12px;
+  text-align: center;
+}
+.home .news-magazins-details{
+  margin-top: 0px;
+}
+.news-one{
+  border: 1px solid #e3e3e3;
+  padding: 15px;
+}
+.news-one img{
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+  text-align: center;
+  max-width: 110px;
+  max-height: 110px;
+}
+.news-one h1{
+  font-size: 14px;
+  color: #212121;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-family: 'levenim_mt', sans-serif;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.news-one p{
+  font-size: 14px;
+  color: #999999;
+}
+
+.star ul{
+  display: inline-block;
+}
+.star ul li{
+  list-style: none;
+  padding: 0px 0px;
+}
+.star span{
+  display: inline-block;
+  text-align: right;
+  color: #1FAE5B;
+  font-weight: bold;
+  float: right;
+}
+.fa-star{
+  color: #1FAE5B;
+  font-size: 11px;
+}
+.updated-games{
+  padding-bottom: 25px;
+}
+.item{
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 10px;
+}
+.item:hover .news-one h1{
+  color: #1FAE5B;
+}
+.news-one:hover {
+  box-shadow: 0px 10px 20px rgba(94,94,94,0.5);
+}
+
+/*
+========  =======
+COmment Box
+=========
+*/
+@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+
+.detailBox {
+    
+    border:0px solid #bbb;
+    margin:0px;
+    text-align: justify;
+}
+.titleBox {
+    background-color:#fdfdfd;
+    padding:10px;
+}
+.titleBox label{
+  color:#444;
+  margin:0;
+  display:inline-block;
+}
+
+.commentBox {
+   padding: 10px;
+border-top: 1px dotted #1FAE5B;
+background: #C6C6C6;
+}
+.commentBox .form-group:first-child, .actionBox .form-group:first-child {
+    width:100%;
+}
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:100%;
+    margin-top: 10px;
+}
+.actionBox .form-group * {
+    width:100%;
+}
+.taskDescription {
+    margin-top:10px 0;
+}
+.commentList {
+    padding:0;
+    list-style:none;
+    max-height:200px;
+    overflow:auto;
+}
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+}
+.commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.commentText p {
+    margin:0;
+}
+.sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+.actionBox {
+    border-top:1px dotted #1FAE5B;
+    padding:10px;
+}

@@ -1,0 +1,65 @@
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+display:none;
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:9999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width:100%;
+    border-radius:5px;
+    border-radius:5px;
+    border-radius:5px;  
+}
+
+.nbs-flexisel-item {
+    float:left;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+}
+.nbs-flexisel-item img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    max-width:100%;
+    max-height:100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 50px;
+    height: 50px; 
+    position: absolute;
+    cursor: pointer;
+}
+
+.nbs-flexisel-nav-left {
+    left: -15px; 
+    background: url(../img/products-page/banner/next-icon.png) no-repeat;
+    top: 145px !important;
+}
+
+.nbs-flexisel-nav-right {
+    right: -15px; 
+    background: url(../img/products-page/banner/prev-icon.png) no-repeat;
+    top: 145px !important;
+}
+
