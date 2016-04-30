@@ -10,6 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Place favicon.ico in the root directory -->
+
       <!-- Palce fontawesome style directory-->
        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
 
@@ -25,7 +26,7 @@
       <link rel="stylesheet" href="bootstrap/bootstrap-select/bootstrap-select.min.css">
       <!-- Palce Main style directory-->
       <!-- <link rel="stylesheet" href="css/main.css"> -->
-      <link rel="stylesheet" href="custom.css">
+      <link rel="stylesheet" href="css/main.css">
 
       <!-- Palce Main style directory-->
       <link rel="stylesheet" href="css/responsive.css">
@@ -37,198 +38,193 @@
   <body class="Home">
       <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+      <![endif]-->
       <header id="header">
-       <nav class="navbar  navbar-bootsnipp animate header-top" role="navigation">
-              <div class="container">
-              <div class="row">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <div class="animbrand">
-                    <a class="navbar-brand animate" href="#">aamargaan</a>
+        <nav class="navbar  navbar-bootsnipp animate header-top" role="navigation">
+                <div class="container">
+                    <div class="row">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <div class="animbrand">
+                      <a class="navbar-brand animate" href="#">aamargaan</a>
+                    </div>
+                  </div>
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="visible-xs">
+                        <form action="" method="GET" role="search">
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="q" placeholder="Search for Songs">
+                            <span class="input-group-btn">
+                              <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                              <button class="btn btn-danger" type="reset"><span class="glyphicon glyphicon-remove"></span></button>
+                            </span>
+                          </div>
+                        </form>
+                      </li>
+                      <li class=""><a href="#" class="animate">Top Chart</a></li>
+                      <li class=""><a href="#" class="animate">Songs</a></li>
+                      <li class=""><a href="#" class="animate">Artist</a></li>
+                      <li>
+                        <a href="#" class="dropdown-toggle animate " data-toggle="dropdown">Categories<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+
+                          <li class=""><a href="" class="animate">Form Builder </a></li>
+                          <li class=""><a href="" class="animate">Button Builder </a></li>
+                          <li class=""><a href="" class="animate">Icon Search </a></li>
+                          
+
+                        </ul>
+                      </li>
+                      
+                        <li class=""><a href="" class="animate">Register</a></li>
+                        <li id="nav-login-btn" class=""><a href="" class="animate">Login</a></li>
+                      
+                      <li class="hidden-xs"><a href="#toggle-search" class="animate"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                  </div>
                   </div>
                 </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                  <ul class="nav navbar-nav navbar-right">
-                    <li class="visible-xs">
-                      <form action="" method="GET" role="search">
-                        <div class="input-group">
-                          <input type="text" class="form-control" name="q" placeholder="Search for Songs">
-                          <span class="input-group-btn">
-                            <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-                            <button class="btn btn-danger" type="reset"><span class="glyphicon glyphicon-remove"></span></button>
-                          </span>
-                        </div>
-                      </form>
-                    </li>
-                    <li class=""><a href="#" class="animate">Top Chart</a></li>
-                    <li class=""><a href="#" class="animate">Songs</a></li>
-                    <li class=""><a href="#" class="animate">Artist</a></li>
-                    <li>
-                      <a href="#" class="dropdown-toggle animate " data-toggle="dropdown">Categories<span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-
-                        <li class=""><a href="" class="animate">Form Builder </a></li>
-                        <li class=""><a href="" class="animate">Button Builder </a></li>
-                        <li class=""><a href="" class="animate">Icon Search </a></li>
-                        
-
-                      </ul>
-                    </li>
-                    
-                      <li class=""><a href="" class="animate">Register</a></li>
-                      <li id="nav-login-btn" class=""><a href="" class="animate">Login</a></li>
-                    
-                    <li class="hidden-xs"><a href="#toggle-search" class="animate"><span class="glyphicon glyphicon-search"></span></a></li>
-                  </ul>
+                <div class="bootsnipp-search animate">
+                  <div class="container">
+                    <form action="" method="GET" role="search">
+                      <div class="input-group">
+                        <input type="text" class="form-control" name="q" placeholder="Search for Songs,Artist,Album">
+                        <span class="input-group-btn">
+                          <button class="btn btn-danger" type="reset"><span class="glyphicon glyphicon-remove"></span></button>
+                        </span>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-                </div>
-              </div>
-              <div class="bootsnipp-search animate">
-                <div class="container">
-                  <form action="" method="GET" role="search">
-                    <div class="input-group">
-                      <input type="text" class="form-control" name="q" placeholder="Search for Songs,Artist,Album">
-                      <span class="input-group-btn">
-                        <button class="btn btn-danger" type="reset"><span class="glyphicon glyphicon-remove"></span></button>
-                      </span>
-                    </div>
-                  </form>
-                </div>
-              </div>
-      </nav>
-                  
+        </nav> 
       </header>
       <div class="clearfix"></div>
 
       <!-- Main Body Section Start-->
+
       <section id="BodyWrap">
-            <div class="body-area">
-                <div class="container-fluid">
-                <div class="row">
-                <!-- start Of Left side Top Ten Part -->
-                  <div class="col-sm-2 col-xs-12 top-chart-area">
-                        <div class="topchart-head">
-                              Top Chart
-                        </div>
-                        <div class="topchart-icon">
-                              <img src="img/topchar_icon.png" alt="topchart icon" class="img-responsive img-center"/>
-                        </div>
-                        <div class="top-tab">
-                              <ul class="nav nav-tabs">
-                                  <li class="active"><a data-toggle="pill" href="#week">Weekly</a></li>
-                                  <li><a data-toggle="pill" href="#month">Monthly</a></li>
-                                  <li><a data-toggle="pill" href="#year">Yearly</a></li>
-                                  
-                              </ul>
-                                <div class="tab-content">
-                                  <div id="week" class="tab-pane fade in active scroll">
-                                    
-                                     <ul class="list-group">
-                                      <a href="">
-                                            <li class="list-group-item">
-                                          <div class="list-image">
-                                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                                          </div>
-                                        <span class="label label-default label-pill pull-xs-right">14</span>
-                                        Jabra Fan
-                                         <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                                      </li>
-                                      </a>
-                                      <li class="list-group-item">
-                                        <div class="list-image">
-                                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                                          </div>
-                                        <span class="label label-default label-pill pull-xs-right">14</span>
-                                        Jabra Fan
-                                         <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="list-image">
-                                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                                          </div>
-                                        <span class="label label-default label-pill pull-xs-right">14</span>
-                                        Jabra Fan
-                                         <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="list-image">
-                                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                                          </div>
-                                        <span class="label label-default label-pill pull-xs-right">14</span>
-                                        Jabra Fan
-                                         <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="list-image">
-                                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                                          </div>
-                                        <span class="label label-default label-pill pull-xs-right">14</span>
-                                        Jabra Fan
-                                         <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="list-image">
-                                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                                          </div>
-                                        <span class="label label-default label-pill pull-xs-right">14</span>
-                                        Jabra Fan
-                                         <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                                      </li>
-                                      <li class="list-group-item">
-                                        <div class="list-image">
-                                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                                          </div>
-                                        <span class="label label-default label-pill pull-xs-right">14</span>
-                                        Jabra Fan
-                                         <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                  <div id="month" class="tab-pane fade scroll">
-                                    <h3>Monthly Top Chart</h3>
-                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                  </div>
-                                  <div id="year" class="tab-pane fade scroll">
-                                    <h3>Yearly Top Chart</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                                  </div>
-                                 
-                                </div>
-                        </div>
+        <div class="body-area">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- start Of Left side Top Ten Part -->
+              <div class="col-sm-2 col-xs-12 top-chart-area">
+                <div class="topchart-head">
+                  Top 10
+                </div>
+                <div class="topchart-icon">
+                  <img src="img/topchar_icon.png" alt="topchart icon" class="img-responsive img-center"/>
+                </div>
+                <div class="top-tab">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="pill" href="#week">Weekly</a></li>
+                    <li><a data-toggle="pill" href="#month">Monthly</a></li>
+                    <li><a data-toggle="pill" href="#year">Yearly</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="week" class="tab-pane fade in active scroll">
+
+                       <ul class="list-group">
+                        <a href="">
+                          <li class="list-group-item">
+                            <div class="list-image">
+                              <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                            </div>
+                            <span class="label label-default label-pill pull-xs-right">14</span>
+                            Jabra Fan
+                            <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                          </li>
+                        </a>
+                        <li class="list-group-item">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right">14</span>
+                          Jabra Fan
+                           <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right">14</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right">14</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                            </div>
+                          <span class="label label-default label-pill pull-xs-right">14</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right">14</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right">14</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div id="month" class="tab-pane fade scroll">
+                      <h3>Monthly Top Chart</h3>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="year" class="tab-pane fade scroll">
+                      <h3>Yearly Top Chart</h3>
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <!-- End Of Left side Top Ten section -->
+
+
+              <!-- Start Of Album Song Artist Cat section -->
+              <div class="col-sm-4 col-xs-12 main-content-wrap">
+                <div class="main-content-head">
 
                 </div>
-                <!-- End Of Left side Top Ten section -->
-
-
-                <!-- Start Of Album Song Artist Cat section -->
-                <div class="col-sm-4 col-xs-12 main-content-wrap">
-                  <div class="main-content-head">
-
-                  </div>
-                  <div class="main-content-icon">
-                        <img src="" />
-                  </div>
-                  <div class="main-content-body">
-                        
-                  </div>
-
+                <div class="main-content-icon">
+                  <img src="" />
                 </div>
-
-                <!-- End Of Album Song Artist Cat section -->
-
-                </div> <!--Row Div End -->
-            </div>
+                <div class="main-content-body">
+                </div>
+              </div>
+              <!-- End Of Album Song Artist Cat section -->
+            </div> <!--Row Div End -->
+          </div>
+        </div>
       </section>
-
 
       <!-- Main Body section end-->
 
@@ -238,19 +234,14 @@
 
 
 
-
-
-
-
-
-   <!-- Palce jQuery-1.11.3 directory-->
+      <!-- Palce jQuery-1.11.3 directory-->
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
       
        
       <!-- Palce Bootstraps directory-->
       <script src="bootstrap/js/bootstrap.min.js"></script>
       <script src="bootstrap/bootstrap-select/bootstrap-select.min.js"></script>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
       <!-- Palce Our Customize Javascript directory-->
       <script src="js/main.js"></script>
