@@ -208,7 +208,7 @@ a:focus{
 }
 .scroll{
 	overflow-y: scroll;
-	height:380px;
+	height:500px;
 }
 .label{
 	float: right;
@@ -239,9 +239,61 @@ a:focus{
 /*
 ========Album Songs Artist Content Section========
 */
+.featured-tab .tab-content{
+	background: none;
+	padding-top: 0px;
+}
 .top-list .featured-top{
 	padding: 4px !important; 
 }
 .top-tob .featured-tab > li{
 
+}
+.featured-item {
+  background: white none repeat scroll 0 0;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.item{
+	padding: 5px;
+} 
+.item:hover .item-details h3{
+	color: #E57A21; 
+} 
+.featured-tab .cover-photo img{
+	max-width: 100%;
+	min-height: 140px;
+}
+.featured-tab .item-details h3{
+	color: #213139;
+	font-size: 16px;
+	margin: 0px;
+} 
+.featured-tab .item-details p{
+	color: #A8A098;
+	font-size: 11px;
+	margin-bottom: 0px;
+} 
+.featured-tab .item-details span{
+	color: #E57A21;
+}
+.item-titile{
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	padding: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 11px;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+.release-year{
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+	position: absolute;
+	bottom: 80px;
+	left: 30px;
+	display: block;
 }
