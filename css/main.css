@@ -74,6 +74,26 @@ a:focus{
   font-weight: bold;
   color: white;
 }
+
+/* Search Form Styles*/
+#imaginary_container{
+    margin-top:1%; /* Don't copy this */
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0;
+}
 /* .animbrand{
 	content: none !important;
 } 
