@@ -147,11 +147,8 @@ a:focus{
 	font-size: 14px;
 	text-transform: uppercase;
 }
-.topchart-icon{
-
-}
-.list-group{
-
+.topchart-head i{
+	color: #C1C0B9;
 }
 .list-group a{
 	text-decoration: none;
@@ -159,11 +156,17 @@ a:focus{
 	display:block;
 }
 .list-group-item{
-	border-left: 1px solid #f6ad7d!important;
+	border-left: 0px !important;
+	border-right: 0px !important;
+	background: #F6F6F6;
+	padding: 15px 0px;
+}
+.tab-content.margin-t10 {
+ 	background: white none repeat scroll 0 0;
+	padding: 15px 2px 20px 5px;
 }
 .list-group-item:first-child{
 	border-radius: 0px!important;
-	border-top: none;
 }
 .img-center{
 	display: block;
@@ -180,7 +183,7 @@ a:focus{
 	color: #f6ad7d;
 }
 .nav.nav-tabs > li.active > a {
-	color: #f6ad7d !important;
+	color: white !important;
 	border: 0px !important;
 	border-bottom: 0px solid #fff !important;
 }
@@ -188,12 +191,20 @@ a:focus{
 	padding: 5px 6px!important;
 } 
 .nav-tabs > li.active > a{
-	color:#f6ad7d!important;
 	border:1px solid #f6ad7d!important;
 	border-bottom: 1px solid #fff !important;
+	background: #E46C0A;
+	border-radius: 0px;
 }
 .nav-tabs{
 	border-bottom:1px solid #f6ad7d!important;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: #E46C0A;
+	border-radius: 0px;
+}
+.nav.nav-tabs > li > a:hover, .nav.nav-tabs > li > a:focus{
+	color: white;
 }
 .scroll{
 	overflow-y: scroll;
@@ -218,21 +229,19 @@ a:focus{
 	display:inline-block;
 	margin-right:2px;
 }
+.list-item-no{
+	float: left;
+	padding: 7px;
+}
 .top-tab{
 	
 }
 /*
-========Main Content Section========
+========Album Songs Artist Content Section========
 */
-.main-content-wrap{
-
+.top-list .featured-top{
+	padding: 4px !important; 
 }
-.main-content-head{
+.top-tob .featured-tab > li{
 
-}
-.main-content-icon{
-
-}
-.main-content-body{
-	
 }
