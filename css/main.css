@@ -183,6 +183,7 @@ a:focus{
 	color: #f6ad7d;
 	margin-right: 0px !important;
 	margin-left: 0px !important;
+	border: 0px;
 }
 .nav.nav-tabs > li.active > a {
 	color: white !important;
@@ -266,6 +267,9 @@ a:focus{
 .top-tob .featured-tab > li{
 
 }
+.categories-sub-tab > li > a{
+	padding: 5px 43.48px !important;
+}
 .featured-item {
   background: white none repeat scroll 0 0;
   padding-bottom: 30px;
@@ -318,6 +322,9 @@ a:focus{
 /*
 ========Feedback Message Section========
 */
+.feedback-tab > li > a{
+	padding: 5px 53.5px !important;
+}
 .brand-post{
 	background: white;
 	padding: 10px;
