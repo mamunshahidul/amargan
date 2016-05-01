@@ -179,13 +179,18 @@ a:focus{
   border-bottom: 0px !important;
 }
 .nav.nav-tabs > li > a{
-	padding: 5px 8px !important;
+	padding: 5px 8px;
 	color: #f6ad7d;
+	margin-right: 0px !important;
+	margin-left: 0px !important;
 }
 .nav.nav-tabs > li.active > a {
 	color: white !important;
 	border: 0px !important;
 	border-bottom: 0px solid #fff !important;
+}
+.nav.nav-tabs > li.active > a:hover{
+	color: white;
 }
 .nav > li > a{
 	padding: 5px 6px!important;
@@ -196,6 +201,13 @@ a:focus{
 	background: #E46C0A;
 	border-radius: 0px;
 }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: #555;
+	cursor: default;
+	background-color: #E46C0A;
+	border: 1px solid #ddd;
+	border-bottom-color: transparent;
+}
 .nav-tabs{
 	border-bottom:1px solid #f6ad7d!important;
 }
@@ -205,6 +217,9 @@ a:focus{
 }
 .nav.nav-tabs > li > a:hover, .nav.nav-tabs > li > a:focus{
 	color: white;
+}
+.top-10-nav > li > a{
+	padding: 5px 10.258px !important;
 }
 .scroll{
 	overflow-y: scroll;
@@ -233,8 +248,8 @@ a:focus{
 	float: left;
 	padding: 7px;
 }
-.top-tab{
-	
+.test{
+	padding: 0px 20px;
 }
 /*
 ========Album Songs Artist Content Section========
@@ -242,6 +257,8 @@ a:focus{
 .featured-tab .tab-content{
 	background: none;
 	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 .top-list .featured-top{
 	padding: 4px !important; 
@@ -351,4 +368,11 @@ a:focus{
 .featured-main-right img{
 	max-width: 100%;
 	min-height: 80px;
+}
+.follower-feedback{
+	display: inline-block;
+	margin-top: 10px;
+}
+.follower-feedback h5{
+	margin: 0px;
 }
