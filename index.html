@@ -38,504 +38,554 @@
       <script src="js/jquery.easing.js"></script>
   </head>
 
-  <body class="Home">
-      <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
-      <header id="header">
-        <nav class="navbar-bootsnipp animate header-top" role="navigation">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="animbrand">
-                <a class="navbar-brand animate" href="index.html">aamargaan</a>
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <header id="header">
+    <nav class="navbar-bootsnipp animate header-top" role="navigation">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="animbrand">
+            <a class="navbar-brand animate" href="index.html">aamargaan</a>
+          </div>
+           <div id="imaginary_container" class="col-sm-4 col-xs-12"> 
+            <div class="input-group stylish-input-group">
+              <input type="text" class="form-control"  placeholder="Search by Song/Artist" >
+              <span class="input-group-addon">
+                <button type="submit">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>  
+              </span>
+            </div>
+          </div>
+  
+          <div class="col-sm-4 col-xs-12 navbar padding-left-off">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+           
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+              <ul class="nav navbar-nav">
+                <li class=""><a href="#" class="animate">Top Chart</a></li>
+                <li class=""><a href="#" class="animate">Songs</a></li>
+                <li class=""><a href="#" class="animate">Artist</a></li>
+                <li>
+                  <a href="#" class="dropdown-toggle animate " data-toggle="dropdown">Categories<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class=""><a href="" class="animate">Form Builder </a></li>
+                    <li class=""><a href="" class="animate">Button Builder </a></li>
+                    <li class=""><a href="" class="animate">Icon Search </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="col-sm-2 col-xs-12 register-panel">
+            <ul class="list-inline">
+              <li class=""><a href="" class="animate">Register</a></li>
+              <li id="nav-login-btn" class=""><a href="" class="animate">Login</a></li>
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+    </nav> 
+  </header>
+  <div class="clearfix"></div>
+  
+  <!-- Main Body Section Start-->
+  <section id="BodyWrap" class="margin-t30">
+    <div class="body-area">
+      <div class="container-fluid">
+        <div class="row">
+  
+          <!-- start Of Left side Top Ten Part -->
+          <div class="col-sm-2 col-xs-12 top-chart-area padding-left-off">
+            <div class="top-list">
+              <div class="topchart-head">
+                Top 10
               </div>
-               <div id="imaginary_container" class="col-sm-4 col-xs-12"> 
-                <div class="input-group stylish-input-group">
-                  <input type="text" class="form-control"  placeholder="Search by Song/Artist" >
-                  <span class="input-group-addon">
-                    <button type="submit">
-                      <span class="glyphicon glyphicon-search"></span>
-                    </button>  
-                  </span>
-                </div>
+              <div class="topchart-icon">
+                <img src="img/topchar_icon.png" alt="topchart icon" class="img-responsive img-center"/>
               </div>
-
-              <div class="col-sm-4 col-xs-12 navbar padding-left-off">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-               
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                  <ul class="nav navbar-nav">
-                    <li class=""><a href="#" class="animate">Top Chart</a></li>
-                    <li class=""><a href="#" class="animate">Songs</a></li>
-                    <li class=""><a href="#" class="animate">Artist</a></li>
-                    <li>
-                      <a href="#" class="dropdown-toggle animate " data-toggle="dropdown">Categories<span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li class=""><a href="" class="animate">Form Builder </a></li>
-                        <li class=""><a href="" class="animate">Button Builder </a></li>
-                        <li class=""><a href="" class="animate">Icon Search </a></li>
-                      </ul>
+            </div>
+            <div class="top-tab">
+              <ul class="nav nav-tabs top-10-nav">
+                <li class="active"><a data-toggle="pill" href="#week">Weekly</a></li>
+                <li><a data-toggle="pill" href="#month">Monthly</a></li>
+                <li><a data-toggle="pill" href="#year">Yearly</a></li>
+              </ul>
+              <div class="tab-content margin-t10">
+                <div id="week" class="tab-pane fade in active scroll">
+  
+                   <ul class="list-group">
+              
+                    <li class="list-group-item">
+                      <a href="#">
+                        <div class="list-item-no">
+                          1
+                        </div>
+                        <div class="list-item-inn">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#">
+                        <div class="list-item-no">
+                          2
+                        </div>
+                        <div class="list-item-inn">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#">
+                        <div class="list-item-no">
+                          3
+                        </div>
+                        <div class="list-item-inn">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#">
+                        <div class="list-item-no">
+                          4
+                        </div>
+                        <div class="list-item-inn">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#">
+                        <div class="list-item-no">
+                          5
+                        </div>
+                        <div class="list-item-inn">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#">
+                        <div class="list-item-no">
+                          6
+                        </div>
+                        <div class="list-item-inn">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#">
+                        <div class="list-item-no">
+                          7
+                        </div>
+                        <div class="list-item-inn">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#">
+                        <div class="list-item-no">
+                          7
+                        </div>
+                        <div class="list-item-inn">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#">
+                        <div class="list-item-no">
+                          7
+                        </div>
+                        <div class="list-item-inn">
+                          <div class="list-image">
+                            <img src="img/userprofile.jpg" alt="" class="img-responsive">
+                          </div>
+                          <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
+                          Jabra Fan
+                          <p class="list-group-item-text list-text">Jabra Anthem Song</p>
+                        </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
+  
+                <div id="month" class="tab-pane fade scroll">
+                  <h3>Monthly Top Chart</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div id="year" class="tab-pane fade scroll">
+                  <h3>Yearly Top Chart</h3>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+               
               </div>
-
-              <div class="col-sm-2 col-xs-12 register-panel">
-                <ul class="list-inline">
-                  <li class=""><a href="" class="animate">Register</a></li>
-                  <li id="nav-login-btn" class=""><a href="" class="animate">Login</a></li>
-                </ul>
-              </div>
-
             </div>
           </div>
-        </nav> 
-      </header>
-      <div class="clearfix"></div>
-
-      <!-- Main Body Section Start-->
-      <section id="BodyWrap" class="margin-t30">
-        <div class="body-area">
-          <div class="container-fluid">
-            <div class="row">
-
-              <!-- start Of Left side Top Ten Part -->
-              <div class="col-sm-2 col-xs-12 top-chart-area padding-left-off">
-                <div class="top-list">
-                  <div class="topchart-head">
-                    Top 10
-                  </div>
-                  <div class="topchart-icon">
-                    <img src="img/topchar_icon.png" alt="topchart icon" class="img-responsive img-center"/>
-                  </div>
+          <!-- End Of Left side Top Ten section -->
+  
+          <!-- Start Of Album Song Artist Cat section -->
+          <div class="col-sm-4 col-xs-12 main-content-wrap padding-off">
+            <div class="main-content-head">
+  
+              <div class="top-list">
+                <div class="topchart-head featured-top">
+                  Album <i class="fa fa-arrows" aria-hidden="true"></i>
                 </div>
-                <div class="top-tab">
-                  <ul class="nav nav-tabs top-10-nav">
-                    <li class="active"><a data-toggle="pill" href="#week">Weekly</a></li>
-                    <li><a data-toggle="pill" href="#month">Monthly</a></li>
-                    <li><a data-toggle="pill" href="#year">Yearly</a></li>
-                  </ul>
-                  <div class="tab-content margin-t10">
-                    <div id="week" class="tab-pane fade in active scroll">
-
-                       <ul class="list-group">
-                  
-                        <li class="list-group-item">
-                          <a href="#">
-                            <div class="list-item-no">
-                              1
-                            </div>
-                            <div class="list-item-inn">
-                              <div class="list-image">
-                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                              </div>
-                              <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
-                              Jabra Fan
-                              <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="list-group-item">
-                          <a href="#">
-                            <div class="list-item-no">
-                              2
-                            </div>
-                            <div class="list-item-inn">
-                              <div class="list-image">
-                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                              </div>
-                              <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
-                              Jabra Fan
-                              <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="list-group-item">
-                          <a href="#">
-                            <div class="list-item-no">
-                              3
-                            </div>
-                            <div class="list-item-inn">
-                              <div class="list-image">
-                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                              </div>
-                              <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
-                              Jabra Fan
-                              <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="list-group-item">
-                          <a href="#">
-                            <div class="list-item-no">
-                              4
-                            </div>
-                            <div class="list-item-inn">
-                              <div class="list-image">
-                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                              </div>
-                              <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
-                              Jabra Fan
-                              <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="list-group-item">
-                          <a href="#">
-                            <div class="list-item-no">
-                              5
-                            </div>
-                            <div class="list-item-inn">
-                              <div class="list-image">
-                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                              </div>
-                              <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
-                              Jabra Fan
-                              <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="list-group-item">
-                          <a href="#">
-                            <div class="list-item-no">
-                              6
-                            </div>
-                            <div class="list-item-inn">
-                              <div class="list-image">
-                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                              </div>
-                              <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
-                              Jabra Fan
-                              <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="list-group-item">
-                          <a href="#">
-                            <div class="list-item-no">
-                              7
-                            </div>
-                            <div class="list-item-inn">
-                              <div class="list-image">
-                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                              </div>
-                              <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
-                              Jabra Fan
-                              <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="list-group-item">
-                          <a href="#">
-                            <div class="list-item-no">
-                              7
-                            </div>
-                            <div class="list-item-inn">
-                              <div class="list-image">
-                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                              </div>
-                              <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
-                              Jabra Fan
-                              <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="list-group-item">
-                          <a href="#">
-                            <div class="list-item-no">
-                              7
-                            </div>
-                            <div class="list-item-inn">
-                              <div class="list-image">
-                                <img src="img/userprofile.jpg" alt="" class="img-responsive">
-                              </div>
-                              <span class="label label-default label-pill pull-xs-right margin-t10">5.11</span>
-                              Jabra Fan
-                              <p class="list-group-item-text list-text">Jabra Anthem Song</p>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
+                <div class="topchart-icon">
+                  <img src="img/topchar_icon.png" alt="topchart icon" class="img-responsive img-center"/>
+                </div>
+              </div>
+  
+              <div class="top-tab featured-tab">
+                <ul class="nav nav-tabs featured-tab categories-sub-tab">
+                  <li class="active"><a data-toggle="pill" href="#new">New</a></li>
+                  <li><a data-toggle="pill" href="#mostPlyed" class="test">Most Played</a></li>
+                  <li><a data-toggle="pill" href="#mostLike">Most Like</a></li>
+                </ul>
+                <div class="tab-content margin-t10">
+                  <div id="new" class="tab-pane fade in active">
+                    <div class="featured-item">
+                      <div class="col-sm-4 col-xs-6 item">
+                        <div class="cover-photo">
+                          <div class="item-titile">
+                            Tomar Jonnno Mon 
+                          </div>
+                          <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
+                          <div class="release-year">
+                            2016
+                          </div>
+                        </div>
+                        <div class="item-details margin-t10">
+                          <a href="#"><h3>Tomar Jonno Mon</h3></a>
+                          <p>Joy Shahria Ft Puja</p>
+                          <span>56 likes</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6 item">
+                        <div class="cover-photo">
+                          <div class="item-titile">
+                            Tomar Jonnno Mon 
+                          </div>
+                          <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
+                          <div class="release-year">
+                            2016
+                          </div>
+                        </div>
+                        <div class="item-details margin-t10">
+                          <a href="#"><h3>Tomar Jonno Mon</h3></a>
+                          <p>Joy Shahria Ft Puja</p>
+                          <span>56 likes</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6 item">
+                        <div class="cover-photo">
+                          <div class="item-titile">
+                            Tomar Jonnno Mon 
+                          </div>
+                          <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
+                          <div class="release-year">
+                            2016
+                          </div>
+                        </div>
+                        <div class="item-details margin-t10">
+                          <a href="#"><h3>Tomar Jonno Mon</h3></a>
+                          <p>Joy Shahria Ft Puja</p>
+                          <span>56 likes</span>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
                     </div>
-
-                    <div id="month" class="tab-pane fade scroll">
-                      <h3>Monthly Top Chart</h3>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="featured-item margin-t30">
+                      <div class="col-sm-4 col-xs-6 item">
+                        <div class="cover-photo">
+                          <div class="item-titile">
+                            Tomar Jonnno Mon 
+                          </div>
+                          <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
+                          <div class="release-year">
+                            2016
+                          </div>
+                        </div>
+                        <div class="item-details margin-t10">
+                          <a href="#"><h3>Tomar Jonno Mon</h3></a>
+                          <p>Joy Shahria Ft Puja</p>
+                          <span>56 likes</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6 item">
+                        <div class="cover-photo">
+                          <div class="item-titile">
+                            Tomar Jonnno Mon 
+                          </div>
+                          <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
+                          <div class="release-year">
+                            2016
+                          </div>
+                        </div>
+                        <div class="item-details margin-t10">
+                          <a href="#"><h3>Tomar Jonno Mon</h3></a>
+                          <p>Joy Shahria Ft Puja</p>
+                          <span>56 likes</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6 item">
+                        <div class="cover-photo">
+                          <div class="item-titile">
+                            Tomar Jonnno Mon 
+                          </div>
+                          <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
+                          <div class="release-year">
+                            2016
+                          </div>
+                        </div>
+                        <div class="item-details margin-t10">
+                          <a href="#"><h3>Tomar Jonno Mon</h3></a>
+                          <p>Joy Shahria Ft Puja</p>
+                          <span>56 likes</span>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
                     </div>
-                    <div id="year" class="tab-pane fade scroll">
-                      <h3>Yearly Top Chart</h3>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                    </div>
-                   
+                  </div>
+                  <div id="mostPlyed" class="tab-pane fade">
+                    <h3>Monthly Top Chart</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div id="mostLike" class="tab-pane fade">
+                    <h3>Yearly Top Chart</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                   </div>
                 </div>
               </div>
-              <!-- End Of Left side Top Ten section -->
-
-              <!-- Start Of Album Song Artist Cat section -->
-              <div class="col-sm-4 col-xs-12 main-content-wrap padding-off">
-                <div class="main-content-head">
-
-                  <div class="top-list">
-                    <div class="topchart-head featured-top">
-                      Album <i class="fa fa-arrows" aria-hidden="true"></i>
-                    </div>
-                    <div class="topchart-icon">
-                      <img src="img/topchar_icon.png" alt="topchart icon" class="img-responsive img-center"/>
-                    </div>
-                  </div>
-
-                  <div class="top-tab featured-tab">
-                    <ul class="nav nav-tabs featured-tab categories-sub-tab">
-                      <li class="active"><a data-toggle="pill" href="#new">New</a></li>
-                      <li><a data-toggle="pill" href="#mostPlyed" class="test">Most Played</a></li>
-                      <li><a data-toggle="pill" href="#mostLike">Most Like</a></li>
-                    </ul>
-                    <div class="tab-content margin-t10">
-                      <div id="new" class="tab-pane fade in active">
-                        <div class="featured-item">
-                          <div class="col-sm-4 col-xs-6 item">
-                            <div class="cover-photo">
-                              <div class="item-titile">
-                                Tomar Jonnno Mon 
-                              </div>
-                              <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
-                              <div class="release-year">
-                                2016
-                              </div>
-                            </div>
-                            <div class="item-details margin-t10">
-                              <a href="#"><h3>Tomar Jonno Mon</h3></a>
-                              <p>Joy Shahria Ft Puja</p>
-                              <span>56 likes</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-xs-6 item">
-                            <div class="cover-photo">
-                              <div class="item-titile">
-                                Tomar Jonnno Mon 
-                              </div>
-                              <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
-                              <div class="release-year">
-                                2016
-                              </div>
-                            </div>
-                            <div class="item-details margin-t10">
-                              <a href="#"><h3>Tomar Jonno Mon</h3></a>
-                              <p>Joy Shahria Ft Puja</p>
-                              <span>56 likes</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-xs-6 item">
-                            <div class="cover-photo">
-                              <div class="item-titile">
-                                Tomar Jonnno Mon 
-                              </div>
-                              <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
-                              <div class="release-year">
-                                2016
-                              </div>
-                            </div>
-                            <div class="item-details margin-t10">
-                              <a href="#"><h3>Tomar Jonno Mon</h3></a>
-                              <p>Joy Shahria Ft Puja</p>
-                              <span>56 likes</span>
-                            </div>
-                          </div>
-                          <div class="clearfix"></div>
-                        </div>
-                        <div class="featured-item margin-t30">
-                          <div class="col-sm-4 col-xs-6 item">
-                            <div class="cover-photo">
-                              <div class="item-titile">
-                                Tomar Jonnno Mon 
-                              </div>
-                              <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
-                              <div class="release-year">
-                                2016
-                              </div>
-                            </div>
-                            <div class="item-details margin-t10">
-                              <a href="#"><h3>Tomar Jonno Mon</h3></a>
-                              <p>Joy Shahria Ft Puja</p>
-                              <span>56 likes</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-xs-6 item">
-                            <div class="cover-photo">
-                              <div class="item-titile">
-                                Tomar Jonnno Mon 
-                              </div>
-                              <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
-                              <div class="release-year">
-                                2016
-                              </div>
-                            </div>
-                            <div class="item-details margin-t10">
-                              <a href="#"><h3>Tomar Jonno Mon</h3></a>
-                              <p>Joy Shahria Ft Puja</p>
-                              <span>56 likes</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-xs-6 item">
-                            <div class="cover-photo">
-                              <div class="item-titile">
-                                Tomar Jonnno Mon 
-                              </div>
-                              <a href="#"><img src="img/item.png" alt="Item" class="img-responsive"></a>
-                              <div class="release-year">
-                                2016
-                              </div>
-                            </div>
-                            <div class="item-details margin-t10">
-                              <a href="#"><h3>Tomar Jonno Mon</h3></a>
-                              <p>Joy Shahria Ft Puja</p>
-                              <span>56 likes</span>
-                            </div>
-                          </div>
-                          <div class="clearfix"></div>
-                        </div>
-                      </div>
-                      <div id="mostPlyed" class="tab-pane fade">
-                        <h3>Monthly Top Chart</h3>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      </div>
-                      <div id="mostLike" class="tab-pane fade">
-                        <h3>Yearly Top Chart</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Of Album Song Artist Cat section -->
-
-              <!-- Start Of Feed Message section -->
-              <div class="col-sm-3 col-xs-12 padding-right-off feed-message-area">
-                <div class="top-tab featured-tab">
-                  <ul class="nav nav-tabs featured-tab feedback-tab">
-                    <li class="active"><a data-toggle="pill" href="#feed">Feeds</a></li>
-                    <li><a data-toggle="pill" href="#message">Message</a></li>
-                  </ul>
-                  <div class="tab-content margin-t10">
-                    <div id="feed" class="tab-pane fade in active">
-                      <div class="brand-post">
-                          <div class="brand-top">
-                            <div class="post-author">
-                              <img src="img/avatar.jpg" alt="Image" class="img-circle">
-                              <div class="brand-name">
-                                <h5>Miles</h5>
-                                <p>Gulshan, Dhaka</p>
-                                <span>27 min ago</span>
-                              </div>
-                              <a href="#" class="follow-btn pull-right">Follow</a>
-                            </div>
-                          </div>
-                          <div class="post-about">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <p>Lorem Ipsum has been the industry's</p>
-                          </div>
-                          <div class="post-picture margin-t15">
-                            <img src="img/brand_post.jpg" alt="Post Image" class="img-responsive">
-                          </div>
-                          <div class="post-bottom">
-                            <div class="col-sm-6 col-xs-6 people-feedback">
-                              <ul class="list-inline">
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                              </ul>
-                            </div>
-                            <div class="col-sm-6 col-xs-6 people-share">
-                              <ul class="list-inline">
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                    <div id="message" class="tab-pane fade">
-                      <h3>Monthly Top Chart</h3>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Of Feed Message section -->
-
-               <!-- Start Of Featured List Message section -->
-              <div class="col-sm-3 col-xs-12 padding-right-off feed-message-area">
-                <div class="top-tab featured-tab">
-                  <ul class="nav nav-tabs featured-tab">
-                    <li class="active"><a data-toggle="pill" href="#feed">Featured Brand</a></li>
-                    <li><a data-toggle="pill" href="#message">Featured Artist</a></li>
-                    <li><a data-toggle="pill" href="#message">Featured Album</a></li>
-                  </ul>
-                  <div class="tab-content margin-t10">
-                    <div id="feed" class="tab-pane fade in active">
-                      <div class="featured-main">
-                        <div class="col-sm-6 col-xs-6 padding-left-off featured-main-left">
-                          <img src="img/band_cover.jpg" alt="Cover Photo" class="img-responsive">
-                          <div class="featured-main-left-title">
-                            <div class="follower-feedback">
-                              <h5>Miles</h5>
-                              <p>50252 Following</p>
-                            </div>
-                            <a href="#" class="follow-btn pull-right">Follow</a>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-6 padding-right-off featured-main-right">
-                          <img src="img/band_cover.jpg" alt="Cover Photo" class="img-responsive">
-                        </div>
-                      </div>
-                    </div>
-                    <div id="message" class="tab-pane fade">
-                      <h3>Monthly Top Chart</h3>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Of Feed Message section -->
-
-            </div> <!--Row Div End -->
+            </div>
           </div>
-        </div>
-      </section>
+          <!-- End Of Album Song Artist Cat section -->
+  
+          <!-- Start Of Feed Message section -->
+          <div class="col-sm-3 col-xs-12 padding-right-off feed-message-area">
+            <div class="top-tab featured-tab">
+              <ul class="nav nav-tabs featured-tab feedback-tab">
+                <li class="active"><a data-toggle="pill" href="#feed">Feeds</a></li>
+                <li><a data-toggle="pill" href="#message">Message</a></li>
+              </ul>
+              <div class="tab-content margin-t10">
+                <div id="feed" class="tab-pane fade in active">
+                  <div class="brand-post">
+                    <div class="brand-top">
+                      <div class="post-author">
+                        <img src="img/avatar.jpg" alt="Image" class="img-circle">
+                        <div class="brand-name">
+                          <h5>Miles</h5>
+                          <p>Gulshan, Dhaka</p>
+                          <span>27 min ago</span>
+                        </div>
+                        <a href="#" class="follow-btn pull-right">Follow</a>
+                      </div>
+                    </div>
+                    <div class="post-about">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <p>Lorem Ipsum has been the industry's</p>
+                    </div>
+                    <div class="post-picture margin-t15">
+                      <img src="img/brand_post.jpg" alt="Post Image" class="img-responsive">
+                    </div>
+                    <div class="post-bottom margin-t10">
+                      <div class="col-sm-6 col-xs-6 padding-left-off people-feedback">
+                        <ul class="list-inline">
+                          <li><a href="#">
+                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            50
+                          </a></li>
+                          <li><a href="#">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            20
+                          </a></li>
+                          <li><a href="#">
+                            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                            5
+                          </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6 col-xs-6 people-share">
+                        <ul class="list-inline">
+                          <li><a href="#">
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            20
+                          </a></li>
+                          <li><a href="#">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            2
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div id="message" class="tab-pane fade">
+                  <h3>Monthly Top Chart</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Of Feed Message section -->
+  
+           <!-- Start Of Featured List Message section -->
+          <div class="col-sm-3 col-xs-12 padding-right-off feed-message-area">
+            <div class="row">
+              <div class="top-tab featured-tab featured-bg">
+                <ul class="nav nav-tabs featured-tab">
+                  <li class="active"><a data-toggle="pill" href="#fBand">Featured Brand</a></li>
+                  <li><a data-toggle="pill" href="#fArtist">Featured Artist</a></li>
+                  <li><a data-toggle="pill" href="#fAlbum">Featured Album</a></li>
+                </ul>
+                <div class="tab-content margin-t10 clearfix">
+                  <div id="fBand" class="tab-pane fade in active">
+                    <div class="featured-main">
+                      <div class="col-sm-6 col-xs-6 padding-left-off featured-main-left">
+                        <img src="img/band_cover.jpg" alt="Cover Photo" class="img-responsive">
+                        <div class="featured-main-left-title">
+                          <div class="follower-feedback">
+                            <h5>Miles</h5>
+                            <p>50252 Following</p>
+                          </div>
+                          <a href="#" class="follow-btn pull-right margin-t10">Follow</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xs-6 padding-right-off featured-main-right">
+                        <img src="img/band_cover.jpg" alt="Cover Photo" class="img-responsive">
+                        <div class="featured-main-left-title">
+                          <div class="follower-feedback">
+                            <h5>Miles</h5>
+                            <p>50252 Following</p>
+                          </div>
+                          <a href="#" class="follow-btn pull-right margin-t10">Follow</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="featured-main">
+                      <div class="col-sm-6 col-xs-6 padding-left-off featured-main-left">
+                        <img src="img/band_cover.jpg" alt="Cover Photo" class="img-responsive">
+                        <div class="featured-main-left-title">
+                          <div class="follower-feedback">
+                            <h5>Miles</h5>
+                            <p>50252 Following</p>
+                          </div>
+                          <a href="#" class="follow-btn pull-right margin-t10">Follow</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xs-6 padding-right-off featured-main-right">
+                        <img src="img/band_cover.jpg" alt="Cover Photo" class="img-responsive">
+                        <div class="featured-main-left-title">
+                          <div class="follower-feedback">
+                            <h5>Miles</h5>
+                            <p>50252 Following</p>
+                          </div>
+                          <a href="#" class="follow-btn pull-right margin-t10">Follow</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="fArtist" class="tab-pane fade">
+                    <h3>Monthly Top Chart</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div id="fAlbum" class="tab-pane fade">
+                    <h3>Monthly Top Chart</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Of Feed Message section -->
+  
+        </div> <!--Row Div End -->
+      </div>
+    </div>
+  </section>
 
-      <!-- Main Body section end-->
+  <!-- Main Body section end-->
+  
+  
 
-
-
-
-
-
-
-      <!-- Palce jQuery-1.11.3 directory-->
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-      
-       
-      <!-- Palce Bootstraps directory-->
-      <script src="bootstrap/js/bootstrap.min.js"></script>
-      <script src="bootstrap/bootstrap-select/bootstrap-select.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-      <!-- Palce Our Customize Javascript directory-->
-      <script src="js/main.js"></script>
-      <script src="js/scripts.min.js"></script>
-
-      <!-- SmartMenus jQuery plugin -->
-      <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
-      <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>
-  </body>
+  
+  
+  
+  
+  <!--Palce jQuery-1.11.3 directory-->
+ <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+  
+   
+  <!-- Palce Bootstraps directory-->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/bootstrap-select/bootstrap-select.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  
+  <!-- Palce Our Customize Javascript directory-->
+  <script src="js/main.js"></script>
+  <script src="js/scripts.min.js"></script>
+  
+  <!-- SmartMenus jQuery plugin -->
+  <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+  <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>
 </html>
